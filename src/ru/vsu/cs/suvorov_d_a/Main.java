@@ -2,10 +2,10 @@ package ru.vsu.cs.suvorov_d_a;
 
 class Main {
     public static void main(String[] args) {
-        TestResult testResult = new TestResult();
+        Test testResult = new Test();
 
-        if (!testResult.test()) {
-            System.out.println("Tests error!");
+        if (!testResult.testProgram()) {
+            System.out.println("Error! Test isn't completed");
             return;
         } else {
             System.out.println("All tests completed!");
